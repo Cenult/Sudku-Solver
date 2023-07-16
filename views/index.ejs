@@ -1,0 +1,26 @@
+<%- include("./partials/head.ejs") %>
+
+<body>
+    <%- include("./partials/header.ejs") %>
+
+    
+    <div class="container-sudoku">
+        <div class="sudoku-unsolved">
+            <div class="gap-column1"></div>
+            <div class="gap-column2"></div>
+            <div class="gap-row1"></div>
+            <div class="gap-row2"></div>
+        </div>
+        <ul>
+            <button id="solve">SOLVE</button>
+            <button id="clear-board">Clear Board</button>
+            <button id="clear-solution">Clear Solution</button>
+        </ul>
+        
+    </div>
+    <div class="sudokuError"></div>
+    
+    <script src="script.js"></script>
+    <%- include("./partials/footer.ejs") %>
+    
+</body>
